@@ -41,21 +41,21 @@ function getResponse(userInput) {
     const input = userInput.toLowerCase();
     if (userInput.toLowerCase().includes("copyright")) {
         return "Copyright laws protect original works of authorship.";
-    } else if (input.includes("copyright")) {
+    } else if (userInput.toLowerCase().includes("copyright")) {
         return "Copyright laws protect original works of authorship.";
-    } else if (input.includes("fair use")) {
+    } else if (userInput.toLowerCase().includes("fair use")) {
         return "Fair use is a doctrine that permits limited use of copyrighted material without permission from the rights holders.";
-    } else if (input.includes("hello") || input.includes("hi")) {
+    } else if (userInput.toLowerCase().includes("hello") || input.includes("hi")) {
         return "Hello! How can I assist you today?";
-    } else if (input.includes("good morning")) {
+    } else if (userInput.toLowerCase().includes("good morning")) {
         return "Good morning! How can I help you today?";
-    } else if (input.includes("good afternoon")) {
+    } else if (userInput.toLowerCase().includes("good afternoon")) {
         return "Good afternoon! What can I do for you today?";
-    } else if (input.includes("good evening")) {
+    } else if (userInput.toLowerCase().includes("good evening")) {
         return "Good evening! How can I assist you?";
-    } else if (input.includes("how are you")) {
+    } else if (userInput.toLowerCase().includes("how are you")) {
         return "I'm just a bot, but I'm here to help! How can I assist you today?";
-    } else if (input.includes("help") || input.includes("assist")) {
+    } else if (userInput.toLowerCase().includes("help") || input.includes("assist")) {
         return "Sure! Let me know what you need help with.";
     } else if (userInput.toLowerCase().includes("fair use")) {
         return "Fair use is a doctrine that permits limited use of copyrighted material without permission from the rights holders.";
