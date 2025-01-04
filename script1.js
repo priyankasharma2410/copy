@@ -15,7 +15,7 @@ document.getElementById("send-message").addEventListener("click", function() {
     // Simulate response from the backend
     setTimeout(function() {
          // Check PostHog feature flag CAN REMOVE
-        if (posthog.getFeatureFlag('click') === 'click') {
+        if (posthog.getFeatureFlag('click') === 'test') {
             // Custom behavior for users with 'test' flag enabled
             var response = getResponseForTestVariant(userInput);
         } else {
@@ -23,7 +23,7 @@ document.getElementById("send-message").addEventListener("click", function() {
             var response = getResponse(userInput);
         }
         // Replace this section with actual response from the chatbot
-        var response = getResponse(userInput);
+        
         var reply = document.createElement("div");
         reply.classList.add("chat-message", "received");
         reply.innerHTML = "<p>" + response + "</p>";
