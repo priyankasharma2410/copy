@@ -38,6 +38,7 @@ document.getElementById("send-message").addEventListener("click", function() {
 function getResponse(userInput) {
     // Add your logic here to handle user input and return appropriate response
     // This is a placeholder function, replace it with your actual chatbot logic
+    const input = userInput.toLowerCase();
     if (userInput.toLowerCase().includes("copyright")) {
         return "Copyright laws protect original works of authorship.";
     } else if (input.includes("copyright")) {
