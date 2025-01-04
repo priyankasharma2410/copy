@@ -15,7 +15,7 @@ document.getElementById("send-message").addEventListener("click", function() {
     // Simulate response from the backend
     setTimeout(function() {
          // Check PostHog feature flag CAN REMOVE
-        if (posthog.getFeatureFlag('click') === 'test') {
+        if (posthog.getFeatureFlag('click') === 'click') {
             // Custom behavior for users with 'test' flag enabled
             var response = getResponseForTestVariant(userInput);
         } else {
